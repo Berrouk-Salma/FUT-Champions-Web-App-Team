@@ -28,7 +28,7 @@ A web application that allows users to build and manage their FIFA Ultimate Team
 ### Installation
 1. Clone the repository
    ```bash
-   git clone [your-repository-url]
+   git clone [https://github.com/Berrouk-Salma/FUT-Champions-Web-App-Team.git]
    ```
 2. Navigate to the project directory
    ```bash
@@ -63,8 +63,8 @@ This is a learning project part of [Your School/Program Name]
 This project is for educational purposes only.
 
 ## 🙋‍♂️ Author
-[Your Name]
-- GitHub: [@yourusername](https://github.com/yourusername)
+Berrouk salma
+- GitHub: @Berrouk-Salma https://github.com/Berrouk-Salma/FUT-Champions-Web-App-Team.git
 
 ## 📊 Project Status
 Project completed as part of web development training program on [completion date].
