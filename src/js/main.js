@@ -407,7 +407,7 @@ function selectDataFromInputs() {
     selectPosition.value.toUpperCase() === "CDM" ||
     selectPosition.value.toUpperCase() === "LW" ||
     selectPosition.value.toUpperCase() === "ST" ||
-    selectPosition.value.toUpperCase() === "RW"
+    selectPosition.value.toUpperCase() === "RW"||
   ) {
     myObject = {
       nom: inputNom.value,
