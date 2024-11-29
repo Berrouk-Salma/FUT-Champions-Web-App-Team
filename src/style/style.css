@@ -1,9 +1,8 @@
 .stad {
   perspective: 500px;
-
 }
 .containerr{
-  background-image: url(../images/bg.jpg);
+  background-image: url(../images/red.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,11 +13,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.color_f{
+  background-color:#a5282c;
+}
 .stadDiv {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
   grid-template-rows: repeat(13, 1fr);
-  background-image: url(../images/stadium_background.webp);
+  background-image: url(../images/terrain.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -93,6 +95,7 @@
   grid-row: 2/4;
 }
 .player11 {
+  
   grid-column: 10/13;
   grid-row: 1/3;
 }
