@@ -366,10 +366,10 @@ const players = [
 
 
 function selectDataFromInputs() {
-  // let PhotosUrl = inputPhoto.files[0];
+  // let PhotosUrl = inputPhoto.URL[0];
   // let photoPlayer = URL.createObjectURL(PhotosUrl);
 
-  // let flagUrl = inputFlagNationalite.files[0] ?? "";
+  // let flagUrl = inputFlagNationalite.URL[0] ?? "";
 
   // let flagNationalite = URL.createObjectURL(flagUrl);
   // let logoUrl = inputLogoClub;
@@ -381,7 +381,7 @@ function selectDataFromInputs() {
   if (selectPosition.value.toUpperCase() === "GK") {
     myObject = {
       nom: inputNom.value,
-      photo: "",
+      photo: inputPhoto.value,
       nationality: inputNationality.value,
       club: inputClub.value,
       flagNationalite: "",
@@ -403,12 +403,11 @@ function selectDataFromInputs() {
     selectPosition.value.toUpperCase() === "CB" ||
     selectPosition.value.toUpperCase() === "LB" ||
     selectPosition.value.toUpperCase() === "RB" ||
-    selectPosition.value.toUpperCase() === "RB" ||
     selectPosition.value.toUpperCase() === "CDM" ||
     selectPosition.value.toUpperCase() === "LW" ||
     selectPosition.value.toUpperCase() === "ST" ||
-    selectPosition.value.toUpperCase() === "RW"||
-  ) {
+    selectPosition.value.toUpperCase() === "RW"
+) {
     myObject = {
       nom: inputNom.value,
       photo: "photoPlayer",
