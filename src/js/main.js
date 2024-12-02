@@ -311,6 +311,34 @@ btnEnter.addEventListener("click", () => {
     ajouterPlayers();
   }
 });
+  // button formul
+  
+  let form = document.getElementById('show-form');
+  let button = document.getElementById('btn');
+  let close =document.getElementById('close')
+    button.addEventListener('click', function() {
+    console.log('Button clicked');
+    form.style.display="block";
+  });
+
+  close.addEventListener('click',()=>{
+    form.style.display="none"
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 function selectDataFromInputs() {

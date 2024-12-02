@@ -77,8 +77,7 @@
 }
 .formall {
   position: absolute;
-  left: 70%;
-  top: 5%;
+
 }
 .title {
   position: absolute;
@@ -138,9 +137,11 @@
 }
 
 .formall {
+  display: none;
   position: absolute;
-  left: 70%;
-  top: 5%;
+  left: 0px;
+  top:0px;
+  right: 0px;
 }
 .title {
   position: absolute;
@@ -191,10 +192,10 @@
     display: flex;
     flex-direction: column;
   }
-  .formall {
+  /* .formall {
     position: static;
     margin-bottom: 50px;
-  }
+  } */
   .title {
     left: 30%;
   }
