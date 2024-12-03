@@ -79,11 +79,11 @@
   position: absolute;
 
 }
-.title {
+/* .title {
   position: absolute;
   left: 17%;
   top: 3%;
-}
+} */
 
 .plan1 {
   grid-column: 6/9;
@@ -143,11 +143,11 @@
   top:0px;
   right: 0px;
 }
-.title {
+/* .title {
   position: absolute;
   left: 17%;
   top: 3%;
-}
+} */
 
 .player2,
 .player3,
@@ -196,7 +196,7 @@
     position: static;
     margin-bottom: 50px;
   } */
-  .title {
+  /* .title {
     left: 30%;
-  }
+  } */
 }

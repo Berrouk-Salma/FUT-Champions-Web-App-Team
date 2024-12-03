@@ -54,10 +54,8 @@ let player8 = document.querySelector(".player8");
 let player9 = document.querySelector(".player9");
 let player10 = document.querySelector(".player10");
 let player11 = document.querySelector(".player11");
-if(localStorage.DataPlayers !=null){
-  dataPlayer =JSON.parse(localStorage.DataPlayers)
-  }else{
-    dataPlayer = []}
+
+dataPlayer = []
 selectPosition.addEventListener("change", () => {
   if (selectPosition.value === "GK") {
     inputsDivplayerGk.style.display = "block";
