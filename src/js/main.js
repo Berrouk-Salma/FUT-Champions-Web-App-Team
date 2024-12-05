@@ -25,7 +25,6 @@ let inputsDivplayerGk = document.querySelector(".player-gk");
 let inputsDivplayerCm = document.querySelector(".player-cm");
 let divChangement = document.querySelector(".changement");
 let errorPlayerName = document.querySelector(".input-nom");
-let errorPlayerPhoto = document.querySelector(".input-photo");
 let errorPlayerClub = document.querySelector(".input-club");
 let errorPlayerNationality = document.querySelector(".input-flag-nationalite");
 let errorClubLogo = document.querySelector(".input-logo-club");
@@ -288,7 +287,6 @@ function selectDataFromInputs() {
     myObject = {
       nom: inputNom.value,
       photo: photoPlayer,
-      
       nationality: inputNationality.value,
       club: inputClub.value,
       flagNationalite: flagNationalite,
@@ -305,7 +303,7 @@ function selectDataFromInputs() {
     };
     dataPlayer.push(myObject);
   
-    //  localStorage.setItem('DataPlayers', JSON.stringify(dataPlayer))
+   // Check if the selected position matches one of the predefined positions
   } else if (
     selectPosition.value === "CM" ||
     selectPosition.value === "CB" ||
@@ -611,52 +609,52 @@ function deletePlayer(button) {
 }
 
 
-function editePlayers(button) {
-  const card = button.closest('.card');
+// function editePlayers(button) {
+//   const card = button.closest('.card');
   
-  const position = card.querySelector("h5").innerHTML;
+//   const position = card.querySelector("h5").innerHTML;
 
-  const nom = card.querySelector(".text-center.text-sm.font-bold").innerHTML;
-  const rating = card.querySelector(".text-lg.font-bold").innerHTML;
+//   const nom = card.querySelector(".text-center.text-sm.font-bold").innerHTML;
+//   const rating = card.querySelector(".text-lg.font-bold").innerHTML;
   
-  selectPosition.value = position;
-  inputNom.value = nom;
-  inputRating.value = rating;
+//   selectPosition.value = position;
+//   inputNom.value = nom;
+//   inputRating.value = rating;
   
-  if (position === "GK") {
-    inputsDivplayerGk.style.display = "block";
-    inputsDivplayerCm.style.display = "none";
+//   if (position === "GK") {
+//     inputsDivplayerGk.style.display = "block";
+//     inputsDivplayerCm.style.display = "none";
     
-    inputDiving.value = card.querySelector(".player-infos div:nth-child(1) ").innerHTML;
-    inputHandling.value = card.querySelector(".player-infos div:nth-child(2) ").innerHTML;
-    inputKicking.value = card.querySelector(".player-infos div:nth-child(3) ").innerHTML;
-    inputSpeed.value = card.querySelector(".player-infos div:nth-child(4) ").innerHTML;
-    inputPositioning.value = card.querySelector(".player-infos div:nth-child(5) ").innerHTML;
-  } else {
-    inputsDivplayerGk.style.display = "none";
-    inputsDivplayerCm.style.display = "block";
+//     inputDiving.value = card.querySelector(".player-infos div:nth-child(1) ").innerHTML;
+//     inputHandling.value = card.querySelector(".player-infos div:nth-child(2) ").innerHTML;
+//     inputKicking.value = card.querySelector(".player-infos div:nth-child(3) ").innerHTML;
+//     inputSpeed.value = card.querySelector(".player-infos div:nth-child(4) ").innerHTML;
+//     inputPositioning.value = card.querySelector(".player-infos div:nth-child(5) ").innerHTML;
+//   } else {
+//     inputsDivplayerGk.style.display = "none";
+//     inputsDivplayerCm.style.display = "block";
     
-    inputShooting.value = card.querySelector(".player-infos div:nth-child(1) ").innerHTML;
-    inputPace.value = card.querySelector(".player-infos div:nth-child(2) ").innerHTML;
-    inputDribbling.value = card.querySelector(".player-infos div:nth-child(3) ").innerHTML;
-    inputDefending.value = card.querySelector(".player-infos div:nth-child(4) ").innerHTML;
-    inputPhysical.value = card.querySelector(".player-infos div:nth-child(5) ").innerHTML;
-    inputPassing.value = card.querySelector(".player-infos div:nth-child(6) ").innerHTML;
-  }
-  console.log("remove");
+//     inputShooting.value = card.querySelector(".player-infos div:nth-child(1) ").innerHTML;
+//     inputPace.value = card.querySelector(".player-infos div:nth-child(2) ").innerHTML;
+//     inputDribbling.value = card.querySelector(".player-infos div:nth-child(3) ").innerHTML;
+//     inputDefending.value = card.querySelector(".player-infos div:nth-child(4) ").innerHTML;
+//     inputPhysical.value = card.querySelector(".player-infos div:nth-child(5) ").innerHTML;
+//     inputPassing.value = card.querySelector(".player-infos div:nth-child(6) ").innerHTML;
+//   }
+//   console.log("remove");
   
-  card.remove();
+//   card.remove();
   
-  btnEnter.onclick = function() {
-    if (validateForm()) {
-      selectDataFromInputs();
-      ajouterPlayers();
+//   btnEnter.onclick = function() {
+//     if (validateForm()) {
+//       selectDataFromInputs();
+//       ajouterPlayers();
       
     
-      resetForm();
+//       resetForm();
       
   
     
-    }
-  };
-}
+//     }
+//   };
+// }
